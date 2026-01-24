@@ -1843,7 +1843,7 @@ begin
     if (CharIni = #13) or (CharIni = #10) then
     begin
       Inc(CurPos);
-      if Text[CurPos]=#10 then Inc(CurPos); //when #13#10 sequence
+      if (CurPos<=Len) and (Text[CurPos]=#10) then Inc(CurPos); //when #13#10 sequence
 
       Nbr := UpperCase(Copy(Text, CurPos, NBR_TAG.Length)) = NBR_TAG;
       if Nbr then Inc(CurPos, NBR_TAG.Length);
