@@ -39,6 +39,10 @@
 
 ## What's New
 
+- 01/23/2026 (Version 6.13)
+
+   - Fix line break detection for Android platform.
+
 - 01/17/2026 (Version 6.12)
 
    - Add Justify align supporting.
